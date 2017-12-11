@@ -1,0 +1,22 @@
+# host config
+BASE_DIR=/root/vms/windows
+BRIDGE=br0
+VM_BOOT=windows
+
+NAME=win7
+RAM=4G
+SMP=4
+DISK="${BASE_DIR}/win7x64-virtio.qcow2"
+DISK_FMT=qcow2
+
+NIC_MAC=00:16:3e:dd:ff:01
+NIC_MODEL=virtio
+
+VNC_DISPLAY=1
+VNC_IP=127.0.0.1
+SPICE_UNIX="${NAME}.socket"
+
+export QEMU_AUDIO_DRV=alsa
+
+#EXTRA_PARAM='-drive file=/root/vms/windows/softwares-win7x64.qcow2,index=1,if=virtio,format=qcow2,cache=writeback,cache.direct=on,aio=native'
+#EXTRA_PARAM="$EXTRA_PARAM -cdrom /mnt/pt_office_professional_plus_2013_x86_VL.iso"

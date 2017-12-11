@@ -1,0 +1,27 @@
+# host config
+BASE_DIR=/root/vms
+BRIDGE=br0
+VM_BOOT=c
+
+VM_NAME=caixa
+RAM=4G
+CPU_SOCKETS=1
+CORES=4
+
+DISK="$BASE_DIR/disks/caixa.qcow2"
+DISK_IF=virtio
+DISK_FMT=qcow2
+
+# kernel
+#KERNEL=$BASE_DIR/boot/vmlinuz-4.9.0-3-amd64
+#INITRD=$BASE_DIR/boot/initrd.img-4.9.0-3-amd64
+#CMDLINE="root=/dev/vda1"
+
+# network
+NIC_MAC=00:16:2e:DD:00:10
+NIC_MODEL=virtio
+
+VIDEO=1024
+
+SPICE_UNIX=/tmp/caixa.sock
+VNC=16

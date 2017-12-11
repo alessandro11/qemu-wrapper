@@ -1,0 +1,23 @@
+# host config
+BASE_DIR=""
+HOST_BRD=br0
+
+VM_NAME=pdrvfile
+VM_RAM=4G
+VM_SMP=4
+
+VM_DISK=/root/vms/configs/slxboxdev-new-initramfs-i386.ipxe
+#VM_DISK="/home/m3cool/Downloads/ipxe(1).usb"
+VM_DISK_FMT=raw
+
+
+# network kvmae2
+VM_MAC1=00:16:3e:DD:00:65
+VM_VLAN1=221
+VM_GUEST_IFNAME1=pdrvfile
+VM_NIC_MODEL=e1000
+
+VNC_DISPLAY=20
+
+#EXTRA_PARAM='-usb -usbdevice host:13fe:4100'
+
